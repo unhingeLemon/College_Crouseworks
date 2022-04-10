@@ -1,0 +1,2 @@
+javac LinearSearch.java
+java LinearSearch

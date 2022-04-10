@@ -1,0 +1,77 @@
+Missing Features:
+1. Menus
+     a. input for size ng table
+     b. Checkbox(di na max yung 2048 tile, max tile is indefinite)
+     c. functionallity ng bawat buttons sa activity 1,2,3
+2. Design
+		a. ACTIVITY 1
+		b. ACTIVITY 2
+		c. ACTIVITY 3
+3. Music
+4. Animation(if di to kaya kahit wag na)
+5. Leaderboard(name + score)
+6. Specification ni mam (Refactor the code)
+		a.	Coding Standards and Techniques
+		b.	Exception Handling
+		c.	Design Patterns
+		d.	Database Application(Kahit txt File, apply natin don sa leaderboard)
+
+
+ACTIVITY 1
+	button(NEW PLAYER) (to activity 2 after input ng name nya)
+	button(Load Game) (to activity 2 after clicking a name )
+	button(Leaderboard)
+
+ACTIVITY 2
+	MENUs
+		start - mapupunta sa Activity 3
+		settings(dito yung input ng size ng table, endless mode, music, etc)
+		leaderboard
+		exit (mapupunta sa activity 1)
+
+ACTIVITY 3
+	The Game itself
+	button(give up button - go to activity 2)
+
+TIPS:
+	Use Bootstrap, for speed css
+
+
+
+
+
+
+
+
+3/13/2022 KULANGS: Deadline March 15, @5pm
+	LOAD page design
+	Leaderboard Design
+	Pakitanggal yung countdown sa game
+	Paki finish ang docu   //👌
+	
+
+
+
+
+
+
+
+
+
+Documentation: (1-5 Lexie )
+1. Intro
+2. Background
+3. Scope
+4. Features
+5. What does every button do
+6. Sample screenshots
+7. File structure
+8. What part of the code/game does these things applied:
+	2.1	Coding Standards and Techniques
+	2.2	Exception Handling
+	2.3	Design Patterns
+	2.4	Database Application
+
+9. Code
+10. Conclusion
+

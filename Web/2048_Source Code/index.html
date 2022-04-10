@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>2048</title>
+  <script src="index.js"></script>
+
+   <iframe width="560" height="315" src="2048_Sunrise.mp3?autoplay=1,loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class = "audio" allowfullscreen></iframe>
+</head>
+  
+<body>
+  <div class="menu">
+    <header>
+      <h1 class="title">2048</h1>
+    </header>
+    <main>
+      <a></a>
+      
+      <ul>
+        <li><a class= "a" id= 'newGame' href="menu.html">New Game</a></li> <!--edit -->
+        <li><a href="load.html">Load Game</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+      </ul>   
+    </main>
+  </div>
+  
+
+  <script>
+
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        document.getElementById("newGame").addEventListener("click",()=>{
+        sessionStorage.setItem("username","")
+        console.log('asdasd')
+
+      })
+
+    })
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

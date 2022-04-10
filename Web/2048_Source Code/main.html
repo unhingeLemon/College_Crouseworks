@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    
+    <iframe width="560" height="315" src="2048_Starlight.mp3?autoplay=1,loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class = "audio" allowfullscreen></iframe>
+    <audio id="audio" controls style="display:none">
+  <source src="Block.mp3">
+  </audio>
+  <script type = "text/javascript"   src="index.js"></script> 
+      
+
+  </head>
+  
+  <body onload="myFunction()">
+    <h1>2048</h1>
+    <hr>
+    <div class ="header">
+      <div class ="header-list">
+      <h2>Welcome: <span id="name"></span></h2>
+      <h2>Score: <span id="score">0</span></h2>
+		  <h2>Endless Mode: <span id="endlessMode"></span></h2>
+      </div>
+    </div>
+    <div class="action-list">
+      <span id="start"></span>
+    </div>
+    <div id="board">
+    </div>
+    
+    <button class="button button1" onclick="document.getElementById('id01').style.display='block'">Give Up</button>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h3>Give Up?</h3>
+          <p>Are you sure you want to give up?</p>
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="button" onclick="location.href='menu.html';" class="giveupbtn">Give Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      var modal = document.getElementById('id01');
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+  </body>
+	<script type = "text/javascript"   src="script.js"></script> 
+</html>

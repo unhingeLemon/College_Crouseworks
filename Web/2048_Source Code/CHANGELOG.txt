@@ -1,0 +1,56 @@
+CHANGES: (log your changes here)
+	--menu css and html files added (not final... free to make changes)
+
+  ==3/10==
+
+    index.html: main menu (new game, load game, leaderboard)
+    menu.html: menu (start, options, exit)
+    main.html: main game
+
+    what works and what doesn't:
+
+    index.html: New Game - No name getter yet, but proceeds to menu as                               expected
+                Load Game - No database
+                Leaderboard - No database
+
+    menu.html:  Start - works as expected
+                Options - Nothing done yet
+                Exit - works as expected
+
+    main.html:  Give Up - Button already made, modifications underway
+
+  ==3/11==
+    fuck //si vincent ba naglagay neto
+
+    what works and what doesn't:
+
+    index.html: New Game - Name available, proceeds to menu as
+                            expected
+                Load Game - No database
+                Leaderboard - No database
+
+    menu.html:  Start - works as expected
+                Options - Modifications underway
+                  Input Size - Enter doesn't work,
+                  Music - Nothing done as of writing
+                  Endless Mode - Nothing done as of writing 
+                Exit - works as expected
+
+    main.html:  Give Up - Works as expected
+
+    design update: design in modal contents and buttons improved. round       buttons
+
+    ==3/12==
+
+    index.html = Name is missing because it was moved
+                Load Game - No database
+                Leaderboard - No database
+
+    background music added in index.html, menu.html and main.html
+
+    design update: design improved.
+
+    Added sound effects for every moving number block in main.html and script.js
+
+    design update: leaderboard.css and load.css added. 
+    design improved.

@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    background-color: #eee4da;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.title {
+    font-size: 7.5rem;
+    letter-spacing: .15rem;
+    font-weight: 800;
+    color: #433633;
+    margin-bottom: 42px;
+
+    -webkit-animation: title 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: title 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+   
+}
+.audio{
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+enterbutton {
+  font-family: "Clear Sans";
+  font-size: 20px;
+}
+
+/* textarea {
+  font-family: "Clear Sans";
+  font-size: 20px;
+  text-align: center;
+  margin-top:1.75rem;
+}
+ */
+main{
+  color: #727371;
+  font-size: 2.3rem;
+}
+
+main ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+li{
+  padding-bottom: .4rem;
+}
+
+a:link{ 
+  text-decoration: none; 
+}
+
+a:visited{ 
+  color: #727371;
+  text-decoration: none; 
+}
+
+a:hover{ 
+  font-size: 2.4rem;
+  color: #433633;
+  text-decoration: none; 
+}
+
+a:active{ 
+    text-decoration: none; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* May delete */
+/* .modal, .wrapper {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+ */
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content, .music-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  padding-top:40px;
+  border: 1px solid #888;
+  border-radius: 2rem;
+  width: 80%;
+}
+
+.modal-content p, .music-content p{
+  color: #433633;
+  font-weight: 600;
+  letter-spacing: -.7px;
+  margin-bottom: 1rem;
+}
+
+.modal-content p button, .music-content p button{
+  background-color: white;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  padding: 1rem 3.5vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  color:#433633;
+  border: 2px solid #bbada0;
+}
+.modal-content p button:hover {
+  background-color: #bbada0;
+  color: white;
+}
+.modal-content p textarea{
+  width: 20vw;
+}
+.close, .closed{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/*Animation*/
+
+  @-webkit-keyframes title {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes title {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+

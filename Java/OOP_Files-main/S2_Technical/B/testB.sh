@@ -1,0 +1,3 @@
+clear
+javac S2_Technical_B.java
+java S2_Technical_B

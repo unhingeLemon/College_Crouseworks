@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu.css">
+  <title>Menu</title>
+
+     <iframe width="560" height="315" src="2048_Sunrise.mp3?autoplay=1,loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class = "audio" allowfullscreen></iframe>
+
+
+</head>
+
+
+
+
+<body>
+  <div class="menu">
+    <header>
+      <h1 class="title">MENU</h1>
+    </header>
+    <main>
+       <form action="/main.html">
+      <ul>
+<!-- 	NAG INTRODUCE AKO NG FORM NASIRA YUNG CSS more work haha sorry-->
+          <li class = "item-list Player"><p>Enter Player Name: <input required type="text" id="username"></p></li>
+          <li class = "item-list Grid"><p>Grid Size<span>(2 to 10)</span>: <input type="number" class="grids" id="gridSize" value=4 min="4" max = "10"></p></li>
+          
+          <li class = "item-list Check"><p>Endless Mode<input type="checkbox" id="endless" value=""></p></li>
+        <li><button type="submit" id="start">Start</button></li>
+          <li><a id="exitBtn" href="index.html">Exit</a></li>
+      </ul>    
+      </form>
+    </main>
+
+  </div>
+
+  <script>
+    document.getElementById("username").value = sessionStorage.getItem('username')
+    document.getElementById("start").addEventListener("click",()=>{
+        var gridSize = document.getElementById("gridSize").value;
+        var endless = document.getElementById("endless").checked;
+        //var music = document.getElementById("music").checked;
+        var username = document.getElementById("username").value;
+
+        //console.log(gridSize)
+        sessionStorage.setItem("gridSize", gridSize);
+        sessionStorage.setItem("endless", endless);
+        //sessionStorage.setItem("music", music);
+        sessionStorage.setItem("username", username);
+    })
+
+
+
+
+    
+    function setCookie(cname, cscore) {
+      let days = 30
+      const d = new Date();
+      d.setTime(d.getTime() + (days*24*60*60*1000));
+      let expires = "expires="+ d.toUTCString();
+      document.cookie = cname + "=" + cscore + ";" + expires + ";path=/";
+    }
+
+	
+
+
+  </script>
+</body>
+</html>

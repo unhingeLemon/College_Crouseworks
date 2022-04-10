@@ -1,0 +1,3 @@
+clear
+javac S3_Technical_A.java
+java S3_Technical_A

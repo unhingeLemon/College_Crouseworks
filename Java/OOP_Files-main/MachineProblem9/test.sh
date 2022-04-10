@@ -1,0 +1,3 @@
+clear
+javac MachineProblem9.java
+java MachineProblem9

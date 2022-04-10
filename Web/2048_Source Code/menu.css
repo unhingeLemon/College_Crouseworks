@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    background-color: #eee4da;
+}
+.title{
+    font-size: 7.5rem;
+    letter-spacing: .15rem;
+    font-weight: 800;
+    color: #433633;
+    margin-bottom: 42px;
+    -webkit-animation: title 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: title 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.menu ,.item-list p{
+    display: flex;
+    align-items: center;
+
+}
+.menu{
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.item-list p{
+    justify-content: center;
+    gap: 12px;
+}
+
+main{
+    color: #727371;
+    font-size: 2.1rem;
+}
+main ul{
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    padding-bottom: .4rem;
+}
+
+.item-list{
+  color: #433633;
+  letter-spacing: -.7px;
+}
+
+.Player p input, .Grid p input{
+  width: 12rem;
+  height: 2rem;
+  padding: 15px;
+  font-size: 1.6rem;
+  border-radius: 6px;
+}
+.Grid p input{
+  width: 6rem;
+}
+
+.Check p input{
+  display:block;
+  width: 2rem;
+  height: 1.5rem;
+}
+.Check{
+  margin-bottom: 1.5rem;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.audio{
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+li a{
+  display: block;
+}
+li a,li button:link{ 
+    text-decoration: none; 
+  color: #727371;
+}
+li a,li button:visited{ 
+    color: #727371;
+    text-decoration: none; 
+}
+li a,li button:hover{ 
+    font-size: 2.2rem;
+    color: #433633;
+    text-decoration: none; 
+}
+li a,li button:active{ 
+    text-decoration: none; 
+  color: #727371;
+}
+/*Animation*/
+
+  @-webkit-keyframes title {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes title {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

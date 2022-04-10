@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="load.css">
+    <title>Load</title>
+
+     <iframe width="560" height="315" src="2048_Sunrise.mp3?autoplay=1,loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class = "audio" allowfullscreen></iframe>
+
+</head>
+<body>
+    <h1 class="title">Load Game</h1>
+      <div class="item-header">
+      <p>Player Name</p>
+      <p>Score</p>
+      <p></p>
+    </div>
+    <div id="contain">
+        
+      
+    </div>
+    <a href="index.html" class ="btn">Back</a>
+</body>
+
+
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        //get cookies and make into 2d array
+
+        let c =  document.cookie.split(';');
+        //['Mark=11', ' asdasd=1388']
+        
+        //if cookies are not empty
+        if(c != ''){
+            let users = new Array()
+
+            for (let index = 0; index < c.length; index++) {
+                users[index] = new Array()
+                users[index][0] = c[index].split('=')[0]
+                users[index][1] = c[index].split('=')[1]
+
+                
+            }
+
+            //all cookies are now converted to array
+            console.log(users)
+            for (let r = 0; r < users.length; r++) {
+                let item = document.createElement("div");
+                item.setAttribute('id','item');
+                document.getElementById("contain").append(item)
+            
+                let name = document.createElement("div")
+                let score = document.createElement("div")
+								name.setAttribute('id','loadName');
+								score.setAttribute('id','loadScore');
+
+							
+                name.innerHTML = users[r][0]
+                score.innerHTML = users[r][1]
+
+                let button = document.createElement("a")
+                button.setAttribute('id','button' + r.toString())
+                button.setAttribute('href','menu.html')
+                button.innerHTML = "Load"
+
+                document.getElementById("item").append(name)
+                document.getElementById("item").append(score)
+                document.getElementById("item").append(button)
+                
+
+                document.getElementById('button'+r.toString()).addEventListener("click",()=>{
+                    sessionStorage.setItem("username", users[r][0]);
+
+                })
+
+                
+
+            }
+
+
+            
+        }else{
+            console.log('empty');
+        }
+
+    })
+    
+
+
+</script>
+
+
+
+
+
+
+
+
+</html>
+
+
+
