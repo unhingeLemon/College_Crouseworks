@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: #e5e5e5;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #canvas{
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        .a{
+            left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="v">
+        <header id="heads">SNAKE GAME</header>
+        <div class="a">
+            <span id="b">SCORE: </span><span id="score">0</span>
+        </div>
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+

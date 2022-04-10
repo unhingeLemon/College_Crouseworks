@@ -1,0 +1,56 @@
+Name: Mark1
+Age: 1
+1st Score: 1
+2nd Score: 11
+
+
+
+Name: Mark2
+Age: 2
+1st Score: 22
+2nd Score: 22
+
+
+
+Name: Mark3
+Age: 3
+1st Score: 33
+2nd Score: 33
+
+
+
+Name: Mark4
+Age: 4
+1st Score: 44
+2nd Score: 44
+
+
+
+Name: Mark5
+Age: 55
+1st Score: 55
+2nd Score: 55
+
+
+
+
+
+
+
+PLAYER Mark1 SCORE AVERAGE: 
+6
+
+PLAYER Mark2 SCORE AVERAGE: 
+22
+
+PLAYER Mark3 SCORE AVERAGE: 
+33
+
+PLAYER Mark4 SCORE AVERAGE: 
+44
+
+PLAYER Mark5 SCORE AVERAGE: 
+55
+
+THE HIGHEST AVERAGE AMONG ALL PLAYER IS : Mark5
+THE LOWER AVERAGE AMONG ALL PLAYER IS : Mark1
