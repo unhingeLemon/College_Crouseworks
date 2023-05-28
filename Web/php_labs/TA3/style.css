@@ -1,0 +1,21 @@
+.form{
+    width:30vw;
+    margin: 20px auto;
+}
+
+.user-form{
+    width: 30vw;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.links{
+    width: 100%;
+    text-align: right;
+}
+
+.back{
+    margin: 100px;
+}

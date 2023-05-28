@@ -1,0 +1,162 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #202020;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #202020;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+.navbar {
+  border-bottom: 2px solid #707070;
+}
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  padding: 4px 8px;
+}
+
+.navbar-toggler-icon {
+  font-size: 13px;
+}
+
+.intro {
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  margin: auto;
+  padding: 20px 20px;
+  padding-left: 40px;
+  border-left: 4px solid white;
+}
+
+.img {
+  width: 55vw;
+  height: 55vh;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* .skills {
+  margin: 2em 6vw;
+} */
+
+.short-desc {
+  margin: 20px 0;
+  padding: 0 3rem;
+  padding-bottom: 1rem;
+}
+
+#home {
+  padding: 12vh 3.5vw;
+  border-bottom: 1px solid #707070;
+}
+
+#about {
+  padding: 12vh 3.5vw;
+  border-bottom: 1px solid #707070;
+}
+
+#projects {
+  padding: 12vh 3.5vw;
+  border-bottom: 1px solid #707070;
+}
+
+#contact {
+  padding: 12vh 3.5vw;
+  border-bottom: 1px solid #707070;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact > h4 {
+  padding: 0 20px 20px 20px;
+  border-left: 4px solid gray;
+  text-align: center;
+}
+#contact > h5 {
+  text-align: center;
+  margin: 20px;
+}
+
+.card {
+  margin: 20px 0;
+  border-radius: 20px;
+  background-color: #202020;
+  border: none;
+  padding: 20px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 20px 40px;
+}
+.btn {
+  width: 100px;
+  margin: auto;
+  padding: auto;
+}
+
+.card-img-top {
+  border-radius: 20px;
+}
+
+i {
+  font-size: 20px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .img {
+    display: none;
+  }
+}

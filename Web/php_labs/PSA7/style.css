@@ -1,0 +1,62 @@
+body{
+    color: #CFD8DC;
+    background-color: #212121;
+}
+
+.form{
+    width: 500px;
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+
+.link-tag{
+    margin-left: 90%;
+}
+
+.admin-form{
+    width: 500px;
+    border: 2px solid #CFD8DC ;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.admin-form > h3{
+    padding: 8px
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.links > a{
+    width: 100%;
+    text-align: right;
+
+}
+
+.form-label{
+    font-size: 16px
+}
+
+.reset-form{
+    margin: 20px 30px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.view-rec{
+    width: 60vw;
+    margin: 20px auto;
+}
+
+.view-rec > a{
+    width: 100%;
+    margin-left: 90%;
+    padding-bottom: 20px;
+}
